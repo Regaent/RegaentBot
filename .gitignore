@@ -7,3 +7,6 @@ __pycache__/token.cpython-38.pyc
 cogs/__pycache__/help.cpython-38.pyc
 cogs/__pycache__/version.cpython-38.pyc
 discord.log
+cogs/__pycache__/bot_commands.cpython-38.pyc
+cogs/__pycache__/commands.cpython-38.pyc
+cogs/__pycache__/__init__.cpython-38.pyc

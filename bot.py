@@ -1,6 +1,8 @@
 from settings import AUTH_TOKEN
 from discord.ext import commands
 import discord
+from cogs import version
+from cogs import bot_commands
 
 # Intents allow specific features of discordpy to be enabled or disabled to prevent certain events from triggering/being sent
 intents = discord.Intents.default()
@@ -25,7 +27,7 @@ async def on_ready():
 
 try:
 	bot.load_extension('cogs.version')
-	bot.load_extension('cogs.help')
+	bot.load_extension('cogs.bot_commands')
 except commands.errors.ExtensionNotFound as e:
 	print(f'No command named: {e.name} found.')
 

@@ -2,7 +2,7 @@ import discord
 from settings import bot_version
 from discord.ext import commands
 
-class help(commands.Cog):
+class bot_commands(commands.Cog):
 	def __init__(self, bot):
 		self.bot = bot
 
@@ -10,8 +10,8 @@ class help(commands.Cog):
 	async def on_message(self, message):
 		if message.author == client.user:
 			return
-		if message.content.startswith('!help'):
+		if message.content.startswith('!commands'):
 			await message.channel.send('Bot Commands:\n''!version - Posts current discord and bot version.')
 
 def setup(bot):
-	bot.add_cog(help(bot))
+	bot.add_cog(bot_commands(bot))
