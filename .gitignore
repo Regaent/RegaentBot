@@ -1,0 +1,9 @@
+
+discord.log
+discord.log
+.env
+__pycache__/settings.cpython-38.pyc
+__pycache__/token.cpython-38.pyc
+cogs/__pycache__/help.cpython-38.pyc
+cogs/__pycache__/version.cpython-38.pyc
+discord.log
