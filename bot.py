@@ -9,7 +9,7 @@ intents = discord.Intents.default()
 intents.members = True
 intents.guilds = True
 
-bot = commands.Bot(command_prefix='!')
+bot = discord.ext.commands.Bot(command_prefix='!')
 
 client = discord.Client()
 

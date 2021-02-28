@@ -1,17 +1,17 @@
 import discord
-from settings import bot_version
+from settings import disc_version
 from discord.ext import commands
 
-class bot_commands(commands.Cog):
+class disc_cmds(commands.Cog):
 	def __init__(self, bot):
 		self.bot = bot
 
 	@commands.Cog.listener()
-	async def on_message(self, message):
+	async def cmds(self, message):
 		if message.author == client.user:
 			return
-		if message.content.startswith('!commands'):
+		if message.content.startswith('!help'):
 			await message.channel.send('Bot Commands:\n''!version - Posts current discord and bot version.')
 
 def setup(bot):
-	bot.add_cog(bot_commands(bot))
+	bot.add_cog(disc_cmds(bot))
