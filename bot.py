@@ -16,6 +16,7 @@ async def on_ready():
 
 try:
 	bot.load_extension('cogs.version')
+	bot.test('test')
 except commands.errors.ExtensionNotFound as e:
 	print(f'No command named: {e.name} found.')
 
